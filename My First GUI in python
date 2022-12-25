@@ -30,8 +30,6 @@ def roundto(z):
         return "%.3f"%str_z
     return "%.3f"%(float(str_z))
 
-print(roundto(10.000))
-
 def price_10files():
     global button_return
     button_return.grid_remove()
