@@ -61,10 +61,6 @@ def price_10files():
     input_field1 = tk.Entry(window, font = "Arial", bg = "#FEFCF2")
     input_field1.grid(column = 1, row = 0, padx = 0,pady = 10)
    
-
-    answer1= tk.Label(window, font = "Arial" ,bg = "#777474")
-    answer1.grid(column = 2, row = 0)
-
     button_return1 = tk.Button(window, text = "Calculate Price", command = calculate_price1, bg = "#777474")
     button_return1.grid(column = 1, row = 120, )
 
@@ -103,10 +99,6 @@ def price_9files():
     input_field2 = tk.Entry(window, font = "Arial", bg = "#FEFCF2")
     input_field2.grid(column = 1, row = 0, padx = 0,pady = 10)
    
-
-    answer2 = tk.Label(window, font = "Arial" ,bg = "#777474")
-    answer2.grid(column = 2, row = 0)
-
     button_return2 = tk.Button(window, text = "Calculate Price", command = calculate_price3, bg = "#777474")
     button_return2.grid(column = 1, row = 120)
 
@@ -145,9 +137,6 @@ def price_7files():
     input_field2 = tk.Entry(window, font = "Arial", bg = "#FEFCF2")
     input_field2.grid(column = 1, row = 0, padx = 0,pady = 10)
    
-
-    answer2 = tk.Label(window, font = "Arial" ,bg = "#777474")
-    answer2.grid(column = 2, row = 0)
 
     button_return2 = tk.Button(window, text = "Calculate Price", command = calculate_price5, bg = "#777474")
     button_return2.grid(column = 1, row = 120)
@@ -189,9 +178,6 @@ def price_6files():
     input_field2.grid(column = 1, row = 0, padx = 0,pady = 10)
    
 
-    answer2 = tk.Label(window, font = "Arial" ,bg = "#777474")
-    answer2.grid(column = 2, row = 0)
-
     button_return2 = tk.Button(window, text = "Calculate Price", command = calculate_price4, bg = "#777474")
     button_return2.grid(column = 1, row = 120)
 
@@ -230,10 +216,6 @@ def price_8files():
     input_field2 = tk.Entry(window, font = "Arial", bg = "#FEFCF2")
     input_field2.grid(column = 1, row = 0, padx = 0,pady = 10)
    
-
-    answer2 = tk.Label(window, font = "Arial" ,bg = "#777474")
-    answer2.grid(column = 2, row = 0)
-
     button_return2 = tk.Button(window, text = "Calculate Price", command = calculate_price2, bg = "#777474")
     button_return2.grid(column = 1, row = 120)
 
