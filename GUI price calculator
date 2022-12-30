@@ -3,8 +3,6 @@ from tkinter import messagebox
 
 
 def roundto(z):
-    num = "%.0d"%z
-    num2 = str("%.3d"%z) 
     z = "%.3f"%z
     str_z = str(z)
     if (int(str_z[-3]) >= 1 and int(str_z[-3]) < 5):
@@ -22,13 +20,9 @@ def roundto(z):
                 str_z = float(str_z)
                 return "%.3f"%str_z
     elif (int(str_z[-3]) >= 5 and int(str_z[-3]) <= 9):
-        i = int(num) + 1
-        i = str(i)
-        str_z = i + "."+ num2
-        str_z = str_z.replace(str_z[-3:], "000")
-        str_z = float(str_z)
-        return "%.3f"%str_z
-    return "%.3f"%(float(str_z))
+        z = round(float(z))
+        return "%.3f"%z
+    return z
 
 def price_10files():
     global button_return
