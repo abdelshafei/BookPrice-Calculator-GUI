@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-
+import math
 
 def roundto(z):
     z = "%.3f"%z
@@ -20,7 +20,7 @@ def roundto(z):
                 str_z = float(str_z)
                 return "%.3f"%str_z
     elif (int(str_z[-3]) >= 5 and int(str_z[-3]) <= 9):
-        z = round(float(z))
+        z = math.ceil(float(z))
         return "%.3f"%z
     return z
 
