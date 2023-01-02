@@ -9,7 +9,7 @@ def roundto(z):
         str_z = str_z.replace(str_z[-3:], "500")
         str_z = float(str_z)
         return "%.3f"%str_z
-    elif (int(str_z[-3]) == 0): 
+    elif (int(str_z[-3]) == 0):
         if(int(str_z[-2]) >= 1 and int(str_z[-2]) <= 9):
             str_z = str_z.replace(str_z[-3:], "500")
             str_z = float(str_z)
@@ -19,9 +19,18 @@ def roundto(z):
                 str_z = str_z.replace(str_z[-3:], "500")
                 str_z = float(str_z)
                 return "%.3f"%str_z
-    elif (int(str_z[-3]) >= 5 and int(str_z[-3]) <= 9):
-        z = math.ceil(float(z))
+    elif (int(str_z[-3]) == 5):
+        if(int(str_z[-2]) >= 1 and int(str_z[-2]) <= 9):
+            z = math.ceil(float(str_z))
+            return "%.3f"%z
+        elif (int(str_z[-2]) == 0):
+            if (int(str_z[-1]) >= 1 and int(str_z[-1]) <= 9):  
+                z = math.ceil(float(str_z))
+                return "%.3f"%z
+    elif (int(str_z[-3]) > 5 and int(str_z[-3]) <= 9):
+        z = math.ceil(float(str_z))
         return "%.3f"%z
+
     return z
 
 def price_10files():
